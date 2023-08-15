@@ -30,3 +30,22 @@
         [7] Hello World
 
 */
+
+#include <stdio.h> //program if the user enters an odd number Display line numbers using [].
+    //If the user enters an even number Display line numbers by using ().
+int main() {
+    int a ;
+    int i = 0 ;
+
+    scanf( "%d", &a) ;
+    if (a % 2 == 0) {
+        for( i = 0 ; i <= a ; i++ ) {
+            printf( "(%d) Hello World\n" , i) ;
+        }
+    }else {
+        for( i = 0 ; i <= a ; i++ ) {
+            printf( "[%d] Hello World\n" , i) ;
+        }
+    }
+    return 0 ;
+}//end mian fuction
